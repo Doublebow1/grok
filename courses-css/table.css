@@ -1,0 +1,60 @@
+/* Base styles */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,body {
+	height: 100vh;
+	font-size: 10px;
+	font-family: "Hubballi", Helvetica, serif;
+}
+
+/* body {
+	display: flex;
+	justify-content: space-between;
+} */
+
+/* main styles */
+
+.container {
+	font-size: 3.6rem;
+}
+
+.HTML {
+	margin: 8rem 4rem;
+}
+
+h2 {
+	margin: 15px 20px;
+}
+
+.lessons {
+	display: flex;
+	flex-wrap: wrap;
+	/* justify-content: center; */
+}
+
+.lesson {
+	display: flex;
+	padding: 15px 20px;
+	
+}
+
+.les1 {
+	background-color: #de4747;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	padding: 2.3rem 1.4rem;
+}
+
+
+li {
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	padding: 2.7rem 3rem;
+	/* max-width: 230px;
+	max-height: 90px; */
+} 

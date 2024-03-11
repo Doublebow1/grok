@@ -1,0 +1,103 @@
+html,
+body {
+	font-family: "Hubballi", Helvetica, sans-serif;
+}
+
+.course {
+	display: flex;
+	font-size: 4rem;
+}
+
+.view {
+	padding: 114px 81px;
+	background-color: #e4e4e4;
+	margin: 24px;
+	border-radius: 15px;
+}
+
+.description {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	line-height: 50px;
+}
+
+.price {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	justify-content: space-around;
+	margin: 0 94px;
+	padding: 20px 0;
+
+}
+
+.price > span {
+	text-decoration: line-through;
+	font-size: 6rem;
+}
+
+/* a {
+	padding: 27px 33px;
+	background-image: linear-gradient(to right,#f25d2b ,#2c60f7);
+	border-radius: 20px;
+	color: #fff;
+	transition: all 1s ease;
+}
+
+a:hover {
+	background-image: linear-gradient(to right,#2c60f7 ,#f25d2b );
+	transition: all 1s ease-in;
+} */
+
+.link {
+	/* переменные для анимации  */
+	--width: 100%;
+	--time: 1s;
+	position: relative;
+	color: #fff;
+	background: #f25d2b;
+	overflow: hidden;
+	min-width: 300px;
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 20px;
+	text-transform: uppercase;
+}
+
+.link .text {
+	position: relative;
+	z-index: 5;
+	transition: color var(--time);
+}
+
+.link:hover {
+	color: #000;
+}
+.link .circle {
+	position: absolute;
+	display: block;
+	content: "";
+	z-index: 0;
+	width: 0;
+	height: 0;
+	border-radius: 100%;
+	background: #2c60f7;
+	opacity: 0.9;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: width var(--time), padding-top var(--time);
+}
+
+.link:hover .circle {
+	width: calc(var(--width) * 2.25);
+	padding-top: calc(var(--width) * 2.25);
+}
+
+.text {
+	font-size: 4rem;
+}
